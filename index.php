@@ -57,6 +57,53 @@
                         </div>
                     </div>
                 </div>
+                <div class="uk-grid-35-m" uk-grid>
+                    <?php
+                    $data = array(
+                        array(
+                            'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/qxjrcqjwq/2021_05_29/mu_eric_garcia_1.jpg',
+                            'title' => 'Sao Man City xác nhận gia nhập Barca',
+                            'category' => 'Bóng đá Việt Nam',
+                            'desc' => 'Trung vệ Eric Garcia cho rằng việc rời Man City gia nhập Barca trong hè này là quyết định dũng cảm.',
+                        ),
+                        array(
+                            'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/ofh_huqfztmf/2021_05_28/cristiano_ronaldo_real_madrid_champons_league_13wnw3yuz1nd51f9hso5zns1gf.jpg',
+                            'title' => 'Bạn biết gì về chung kết Champions League?',
+                            'category' => 'Bóng đá Anh',
+                            'desc' => 'Chung kết Champions League là trận đấu quan trọng nhất năm của giải đấu danh giá nhất châu Âu cấp CLB.',
+                        ),
+                        array(
+                            'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/qxjrcqjwq/2021_05_29/vi_sao_james_rodriguez_bi_loai_khoi_tuyen_colombia_1f7_5792868_1.jpg',
+                            'title' => 'James Rodriguez phản ứng khi bị loại khỏi tuyển Colombia',
+                            'category' => 'Esports',
+                            'desc' => 'Tiền vệ của Everton không hài lòng khi bị gạt khỏi danh sách tuyển Colombia ở vòng loại World Cup và Copa America 2021.',
+                        ),
+                    );
+                    foreach ($data as $k => $v): ?>
+                    <div class="uk-width-1-1">
+                        <div class="uk-grid-small uk-grid-32-m uk-flex-middle" uk-grid>
+                            <div class="uk-width-1-3@m">
+                                <div class="uk-cover-container">
+                                    <img src="<?= $v['src'] ?>" alt="" uk-cover>
+                                    <canvas width="776" height="436"></canvas>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand home__box3__box">
+                                <h4 class="uk-h4 home__box3__title"><a href=""><?= $v['title'] ?></a></h4>
+                                <div class="uk-grid-10 uk-child-width-auto uk-flex-middle" uk-grid>
+                                    <div>
+                                        <span class="uk-label home__box3__label"><?= $v['category'] ?></span>
+                                    </div>
+                                    <div>
+                                        <span class="home__box3__time">10 phút trước</span>
+                                    </div>
+                                </div>
+                                <p class="home__box3__desc"><?= $v['desc'] ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
             </div>
             <div class="uk-width-1-3@m">
 
