@@ -1,0 +1,27 @@
+#footer{
+
+}
+.footer{
+  &__title{
+    @extend .fz-18;
+    font-family: $font-MerriweatherSans-Regular;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  &__txt{
+    @extend .fz-14;
+    color: $color2;
+    font-family: $font-MerriweatherSans-Regular;
+  }
+  &__widthApp{
+    width: 140px;
+  }
+  &__list{
+    margin: 0 !important;
+    >li{
+      &:nth-child(n+2){
+        margin-top: 0px;
+      }
+    }
+  }
+}
