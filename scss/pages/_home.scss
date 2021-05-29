@@ -1,0 +1,35 @@
+.home{
+  &__conTent{
+    padding-top: 13px;
+    @include media-breakpoint-up('m'){
+      padding-top: 30px;
+    }
+    @include media-breakpoint-up('l'){
+      padding-top: 40px;
+      padding-bottom: 222px;
+    }
+  }
+  &__bannerTop{}
+  &__box1{
+    border-radius: 4px;
+    @include media-breakpoint-up('m'){
+      border-radius: 8px;
+    }
+    overflow: hidden;
+    &__content{
+      @include media-breakpoint-up('m'){
+        padding: 20px;
+      }
+      top: calc((304/513)*100%);
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(35, 31, 32, 0.5) 38%, #231f20);
+      &__title{
+        @extend .fz-28;
+        line-height: (30/28);
+        font-family: $font-MerriweatherSans-Bold;
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+}
