@@ -1,18 +1,19 @@
 <footer id="footer" class="footer uk-section-small uk-background-01 uk-light">
     <div class="uk-container">
-        <div class="uk-grid-80-m" uk-grid>
-            <div class="uk-width-auto@m">
-                <img src="images/logo_f.png" alt="">
+        <div class="uk-grid-80-m uk-flex-middle" uk-grid>
+            <div class="uk-width-auto@m uk-text-center">
+                <img class="footer__widthLogo" src="images/logo_f.png" alt="">
             </div>
             <div class="uk-width-expand">
-                <ul class="uk-subnav uk-subnav-divider" uk-margin>
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
+                <ul class="uk-subnav uk-subnav-divider footer__subNav" uk-margin>
+                    <li><a href="#">Chính sách dịch vụ</a></li>
+                    <li><a href="#">Điều khoản thanh toán</a></li>
+                    <li><a href="#">Bảo mật thông tin</a></li>
+                    <li><a href="#">Chương trình khuyến mại</a></li>
                 </ul>
             </div>
         </div>
-        <div class="uk-child-width-1-3@m" uk-grid>
+        <div class="uk-child-width-1-3@m footer__marginTop" uk-grid>
             <div>
                 <div class="uk-margin">
                     <h5 class="uk-h5 uk-text-uppercase footer__title">Cơ quan quản lý trang thông tin điện tử :</h5>
