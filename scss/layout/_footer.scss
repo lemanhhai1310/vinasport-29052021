@@ -2,9 +2,12 @@
 
 }
 .footer{
-  &__title{
+  &__dc1{
     @extend .fz-18;
     font-family: $font-MerriweatherSans-Regular;
+  }
+  &__title{
+    @extend .footer__dc1;
     margin-top: 0 !important;
     margin-bottom: 10px !important;
   }
@@ -29,8 +32,7 @@
       }
       >a{
         text-transform: inherit !important;
-        @extend .fz-18;
-        font-family: $font-MerriweatherSans-Regular;
+        @extend .footer__dc1;
       }
     }
   }

@@ -32,4 +32,21 @@
       }
     }
   }
+  &__box2{
+    &__img{
+      border-radius: 4px;
+      @include media-breakpoint-up('m'){
+        border-radius: 8px;
+      }
+    }
+    &__title{
+      @extend .line-clamp-3;
+      @extend .fz-18;
+      line-height: (24/18);
+      font-family: $font-MerriweatherSans-Bold;
+      a{
+        color: #231f20;
+      }
+    }
+  }
 }
