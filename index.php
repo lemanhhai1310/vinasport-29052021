@@ -81,24 +81,26 @@
                     );
                     foreach ($data as $k => $v): ?>
                     <div class="uk-width-1-1">
-                        <div class="uk-grid-small uk-grid-32-m uk-flex-middle" uk-grid>
+                        <div class="uk-grid-collapse uk-background-default uk-box-shadow-medium uk-grid-match" uk-grid>
                             <div class="uk-width-1-3@m">
                                 <div class="uk-cover-container">
                                     <img src="<?= $v['src'] ?>" alt="" uk-cover>
                                     <canvas width="776" height="436"></canvas>
                                 </div>
                             </div>
-                            <div class="uk-width-expand home__box3__box">
-                                <h4 class="uk-h4 home__box3__title"><a href=""><?= $v['title'] ?></a></h4>
-                                <div class="uk-grid-10 uk-child-width-auto uk-flex-middle" uk-grid>
-                                    <div>
-                                        <span class="uk-label home__box3__label"><?= $v['category'] ?></span>
+                            <div class="uk-width-expand">
+                                <div class="home__box3__box uk-padding-small">
+                                    <h4 class="uk-h4 home__box3__title"><a href=""><?= $v['title'] ?></a></h4>
+                                    <div class="uk-grid-10 uk-child-width-auto uk-flex-middle" uk-grid>
+                                        <div>
+                                            <span class="uk-label home__box3__label"><?= $v['category'] ?></span>
+                                        </div>
+                                        <div>
+                                            <span class="home__box3__time">10 phút trước</span>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <span class="home__box3__time">10 phút trước</span>
-                                    </div>
+                                    <p class="home__box3__desc"><?= $v['desc'] ?></p>
                                 </div>
-                                <p class="home__box3__desc"><?= $v['desc'] ?></p>
                             </div>
                         </div>
                     </div>
