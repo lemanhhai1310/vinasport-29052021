@@ -51,6 +51,9 @@
   }
   &__box3{
     &__box{
+      @include media-breakpoint-up('m'){
+        padding: 20px;
+      }
       >*{
         margin-top: 0 !important;
         margin-bottom: 0 !important;
@@ -82,6 +85,9 @@
     }
     &__desc{
       line-height: 1.29;
+      @include media-breakpoint-up('m'){
+
+      }
       @extend .fz-14;
       color: #231f20;
       font-family: $font-MerriweatherSans-Regular;
