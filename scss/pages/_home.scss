@@ -33,6 +33,15 @@
     }
   }
   &__box2{
+    &__box{
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      overflow: hidden;
+      border-radius: 4px;
+      background-color: #fff;
+      @include media-breakpoint-up('m'){
+        border-radius: 8px;
+      }
+    }
     &__img{
       border-radius: 4px;
       @include media-breakpoint-up('m'){
@@ -50,6 +59,12 @@
     }
   }
   &__box3{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    overflow: hidden;
+    @include media-breakpoint-up('m'){
+      border-radius: 8px;
+    }
     &__box{
       @include media-breakpoint-up('m'){
         padding: 20px;
