@@ -97,6 +97,8 @@
       }
     }
     &__label{
+      line-height: 2.2;
+      border-radius: 3px;
       @extend .fz-14;
       font-family: $font-MerriweatherSans-Regular;
       text-transform: capitalize;
