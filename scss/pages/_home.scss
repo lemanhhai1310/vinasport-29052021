@@ -17,6 +17,12 @@
       }
     }
   }
+  &__margin1{
+    margin-bottom: 10px;
+    @include media-breakpoint-up('m'){
+      margin-bottom: 20px;
+    }
+  }
   &__bannerTop{}
   &__box1{
     //border-radius: 4px;

@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="home__margin">
-                    <div class="uk-margin">
+                    <div class="home__margin1">
                         <div class="uk-child-width-auto uk-grid-small uk-flex-middle" uk-grid>
                             <div>
                                 <h3 class="uk-h3 uk-margin-remove uk-text-uppercase home__box4__title">Tin mới</h3>
@@ -121,7 +121,7 @@
                     </div>
                 </div>
                 <div class="home__margin">
-                    <div class="uk-margin">
+                    <div class="home__margin1">
                         <div class="uk-child-width-auto uk-grid-small uk-flex-middle" uk-grid>
                             <div>
                                 <h3 class="uk-h3 uk-margin-remove uk-text-uppercase home__box4__title">Tin miễn phí</h3>
