@@ -9,6 +9,14 @@
       padding-bottom: 222px;
     }
   }
+  &__margin{
+    &:nth-child(n+2){
+      margin-top: 30px;
+      @include media-breakpoint-up('m'){
+        margin-top: 40px;
+      }
+    }
+  }
   &__bannerTop{}
   &__box1{
     //border-radius: 4px;
@@ -116,6 +124,20 @@
       @extend .fz-14;
       color: #231f20;
       font-family: $font-MerriweatherSans-Regular;
+    }
+  }
+  &__box4{
+    &__img{
+      height: 25px;
+      @include media-breakpoint-up('m'){
+        height: 30px;
+      }
+    }
+    &__title{
+      line-height: 0.71;
+      color: #231f20;
+      @extend .fz-28;
+      font-family: $font-MerriweatherSans-BoldItalic;
     }
   }
 }
