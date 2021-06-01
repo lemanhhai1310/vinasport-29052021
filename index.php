@@ -20,42 +20,40 @@
                     </div>
                     <div class="uk-width-1-3@m">
                         <div class="uk-padding-small">
-                            <div class="uk-grid-small uk-grid-20-m" uk-grid>
-                                <?php
-                                $data = array(
-                                    array(
-                                        'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/livospwi/2021_05_29/anh_bia.jpg',
-                                        'title' => 'Dàn sao Man City có chỉ số vượt trội Chelsea trong FIFA 21',
-                                    ),
-                                    array(
-                                        'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/qxjrcqjwq/2021_05_29/joachim_low_germany_2020_1pg4mkzlyvaz81p1ie4duu91kq_1.jpg',
-                                        'title' => 'HLV tuyển Đức lên tiếng về tin dẫn dắt Real Madrid',
-                                    ),
-                                    array(
-                                        'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/mdf_nsozxd/2021_05_29/2.jpg',
-                                        'title' => 'Man City đang giữ kỷ lục nào của bóng đá Anh ở Champions League?',
-                                    ),
-                                    array(
-                                        'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/mdf_drokxr/2021_05_29/man_city.jpg',
-                                        'title' => 'Tử huyệt của Chelsea và Man City',
-                                    ),
-                                );
-                                foreach ($data as $k => $v): ?>
-                                    <div class="uk-width-1-1">
-                                        <div class="uk-grid-small home__box2" uk-grid>
-                                            <div class="uk-width-2-5">
-                                                <div class="uk-cover-container home__box2__img">
-                                                    <img src="<?= $v['src'] ?>" alt="" uk-cover>
-                                                    <canvas width="248" height="178"></canvas>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-expand">
-                                                <h5 class="uk-h5 home__box2__title uk-margin-remove"><a href=""><?= $v['title'] ?></a></h5>
+                            <?php
+                            $data = array(
+                                array(
+                                    'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/livospwi/2021_05_29/anh_bia.jpg',
+                                    'title' => 'Dàn sao Man City có chỉ số vượt trội Chelsea trong FIFA 21',
+                                ),
+                                array(
+                                    'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/qxjrcqjwq/2021_05_29/joachim_low_germany_2020_1pg4mkzlyvaz81p1ie4duu91kq_1.jpg',
+                                    'title' => 'HLV tuyển Đức lên tiếng về tin dẫn dắt Real Madrid',
+                                ),
+                                array(
+                                    'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/mdf_nsozxd/2021_05_29/2.jpg',
+                                    'title' => 'Man City đang giữ kỷ lục nào của bóng đá Anh ở Champions League?',
+                                ),
+                                array(
+                                    'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/mdf_drokxr/2021_05_29/man_city.jpg',
+                                    'title' => 'Tử huyệt của Chelsea và Man City',
+                                ),
+                            );
+                            foreach ($data as $k => $v): ?>
+                                <div class="home__box2__item">
+                                    <div class="uk-grid-small" uk-grid>
+                                        <div class="uk-width-2-5">
+                                            <div class="uk-cover-container home__box2__img">
+                                                <img src="<?= $v['src'] ?>" alt="" uk-cover>
+                                                <canvas width="248" height="178"></canvas>
                                             </div>
                                         </div>
+                                        <div class="uk-width-expand">
+                                            <h5 class="uk-h5 home__box2__title uk-margin-remove"><a href=""><?= $v['title'] ?></a></h5>
+                                        </div>
                                     </div>
-                                <?php endforeach; ?>
-                            </div>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
