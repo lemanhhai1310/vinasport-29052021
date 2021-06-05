@@ -255,8 +255,8 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><span class="home__aside__card__table__tr__txt1"><?= (rand(1,100)) ?></span></td>
-                                <td><span class="home__aside__card__table__tr__txt1"><?= (rand(1,100)) ?></span></td>
+                                <td><span class="home__aside__card__table__tr__txt1"><?= (rand(1,10)) ?></span></td>
+                                <td><span class="home__aside__card__table__tr__txt1"><?= (rand(1,20)) ?></span></td>
                                 <td>
                                     <div class="home__aside__card__table__tr__box1">
                                         <span class="home__aside__card__table__tr__txt1"><?= (rand(1,100)) ?></span>
@@ -298,7 +298,67 @@
                         </div>
                     </div>
                     <div class="uk-card-body home__aside__card__body">
-
+                        <div class="home__aside__card__body__box1">
+                            <div class="uk-flex-middle uk-child-width-auto uk-grid-10" uk-grid>
+                                <div>
+                                    <span class="home__aside__card__body__box1__txt">UEFA Europa League</span>
+                                </div>
+                                <div>
+                                    <span class="home__aside__card__body__box1__dot"></span>
+                                </div>
+                                <div>
+                                    <span class="home__aside__card__body__box1__txt">Vòng 1/16</span>
+                                </div>
+                                <div class="uk-width-expand"></div>
+                                <div>
+                                    <span class="home__aside__card__body__box1__txt">12/01</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__aside__card__body__box3">
+                            <?php for ($i=1;$i<=4;$i++): ?>
+                            <div class="home__aside__card__body__box3__item">
+                                <div class="home__aside__card__body__box3__item__date">Chủ nhật, 20/1/2020 - 21:00</div>
+                                <div class="uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <div class="uk-flex-middle uk-grid-12" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <div>
+                                                    <img src="images/Logo-SportLogo-arsenal-logo.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <span class="home__aside__card__body__box3__item__txt">Arsenal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <span class="home__aside__card__body__box3__item__txt"><?= (rand(1,10)) ?></span>
+                                    </div>
+                                </div>
+                                <div class="uk-flex-middle home__aside__card__body__box3__item__margin" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <div class="uk-flex-middle uk-grid-12" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <div>
+                                                    <img src="images/Logo-SportLogo-chelase.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <span class="home__aside__card__body__box3__item__txt">Chelsea</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <span class="home__aside__card__body__box3__item__txt"><?= (rand(1,10)) ?></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endfor; ?>
+                        </div>
+                        <div class="uk-padding-small uk-text-center home__aside__card__body__box2">
+                            <a href="">Xem tất cả</a>
+                        </div>
                     </div>
                 </div>
                 <!--End Kết quả-->
