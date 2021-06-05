@@ -6,7 +6,7 @@
         <div class="home__bannerTop uk-margin">
             <a href=""><img src="images/Group503.png" alt=""></a>
         </div>
-        <div class="uk-grid-small uk-grid-55-m" uk-grid>
+        <div class="uk-grid-small uk-grid-32-m" uk-grid>
             <div class="uk-width-expand">
                 <div class="home__margin">
                     <div class="uk-grid-collapse home__box2__box" uk-grid>
@@ -189,7 +189,119 @@
                 <!--End Tin miễn phí-->
             </div>
             <div class="uk-width-1-3@m">
+                <!--Bảng xếp hạng-->
+                <div class="uk-card uk-margin home__aside__card">
+                    <div class="uk-card-header home__aside__card__header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-h3 uk-margin-remove home__aside__card__header__title">Bảng xếp hạng</h3>
+                            </div>
+                            <div class="uk-width-auto">
+                                <div uk-form-custom="target: > * > span:first-child">
+                                    <select>
+                                        <option value="">UEFA Europa League</option>
+                                        <option value="1">Option 01</option>
+                                        <option value="2">Option 02</option>
+                                        <option value="3">Option 03</option>
+                                        <option value="4">Option 04</option>
+                                    </select>
+                                    <button class="uk-button uk-button-default home__aside__card__header__form__btn" type="button" tabindex="-1">
+                                        <span></span>
+                                        <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="uk-table uk-table-small uk-table-middle home__aside__card__table">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>Câu lạc bộ</th>
+                                <th>Trận</th>
+                                <th>Hiệu số</th>
+                                <th>Điểm</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            $data = array(
+                                array(
+                                    'src' => 'images/liverpool.png',
+                                    'title' => 'Liverpool',
+                                ),
+                                array(
+                                    'src' => 'images/manchester.png',
+                                    'title' => 'Manchester united',
+                                ),
+                                array(
+                                    'src' => 'images/arsenal.png',
+                                    'title' => 'Arsenal',
+                                ),
+                            );
+                            foreach ($data as $k => $v): ?>
+                            <tr class="home__aside__card__table__tr">
+                                <td><span class="home__aside__card__table__tr__txt1"><?= $k+1 ?></span></td>
+                                <td>
+                                    <div class="uk-flex-middle uk-grid-14" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <div>
+                                                <img src="<?= $v['src'] ?>" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <span class="home__aside__card__table__tr__txt2"><?= $v['title'] ?></span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="home__aside__card__table__tr__txt1"><?= (rand(1,100)) ?></span></td>
+                                <td><span class="home__aside__card__table__tr__txt1"><?= (rand(1,100)) ?></span></td>
+                                <td>
+                                    <div class="home__aside__card__table__tr__box1">
+                                        <span class="home__aside__card__table__tr__txt1"><?= (rand(1,100)) ?></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--End Bảng xếp hạng-->
 
+                <!--Kết quả-->
+                <div class="uk-card uk-margin home__aside__card home__aside__card--dark">
+                    <div class="uk-card-header home__aside__card__header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-h3 uk-margin-remove home__aside__card__header__title">Kết quả</h3>
+                            </div>
+                            <div class="uk-width-auto">
+                                <div uk-form-custom="target: > * > span:first-child">
+                                    <select>
+                                        <option value="">Chọn giải đấu</option>
+                                        <option value="1">Option 01</option>
+                                        <option value="2">Option 02</option>
+                                        <option value="3">Option 03</option>
+                                        <option value="4">Option 04</option>
+                                    </select>
+                                    <button class="uk-button uk-button-default home__aside__card__header__form__btn" type="button" tabindex="-1">
+                                        <span></span>
+                                        <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="uk-width-auto">
+                                <a href="" class="uk-icon-link home__aside__card__header__linkCalendar" uk-icon="icon: calendar; ratio: 1.5"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body home__aside__card__body">
+
+                    </div>
+                </div>
+                <!--End Kết quả-->
             </div>
         </div>
     </div>
