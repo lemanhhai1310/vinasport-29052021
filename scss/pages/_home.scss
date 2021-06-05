@@ -314,8 +314,8 @@
           background-color: #ffffff;
           //min-height: 200px;
           &__item{
-            padding: 15px 15px;
-            padding-left: 28px;
+            padding: 15px 20px;
+            //padding-left: 28px;
             &:nth-child(n+2){
               border-top: 1px solid #707070;
             }
