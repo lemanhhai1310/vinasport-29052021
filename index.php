@@ -59,6 +59,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--Tin mới-->
                 <div class="home__margin">
                     <div class="home__margin1">
                         <div class="uk-child-width-auto uk-grid-small uk-flex-middle" uk-grid>
@@ -120,6 +122,9 @@
                         <?php endforeach; ?>
                     </div>
                 </div>
+                <!--End Tin mới-->
+
+                <!--Tin miễn phí-->
                 <div class="home__margin">
                     <div class="home__margin1">
                         <div class="uk-child-width-auto uk-grid-small uk-flex-middle" uk-grid>
@@ -135,22 +140,22 @@
                         <?php
                         $data = array(
                             array(
-                                'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/qxjrcqjwq/2021_05_29/mu_eric_garcia_1.jpg',
-                                'title' => 'Sao Man City xác nhận gia nhập Barca',
+                                'src' => 'https://sohanews.sohacdn.com/zoom/420_265/160588918557773824/2021/6/5/photo1622836188888-162283618919398567928.jpg',
+                                'title' => 'Không phải Đoàn Văn Hậu, ngôi sao nhà bầu Đức mới là "canh bạc" của HLV Park Hang-seo',
                                 'category' => 'Bóng đá Việt Nam',
-                                'desc' => 'Trung vệ Eric Garcia cho rằng việc rời Man City gia nhập Barca trong hè này là quyết định dũng cảm.',
+                                'desc' => 'HLV Park Hang-seo đang đứng trước cơn đau đầu trong việc lựa chọn nhân sự cho các trận đấu vòng loại World Cup sắp tới.',
                             ),
                             array(
-                                'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/ofh_huqfztmf/2021_05_28/cristiano_ronaldo_real_madrid_champons_league_13wnw3yuz1nd51f9hso5zns1gf.jpg',
-                                'title' => 'Bạn biết gì về chung kết Champions League?',
-                                'category' => 'Bóng đá Anh',
-                                'desc' => 'Chung kết Champions League là trận đấu quan trọng nhất năm của giải đấu danh giá nhất châu Âu cấp CLB.',
+                                'src' => 'https://sohanews.sohacdn.com/zoom/270_170/160588918557773824/2021/6/5/photo1622852879463-16228528797792116318862.png',
+                                'title' => 'Báo UAE lo lắng, mong tuyển Việt Nam sảy chân trước “chung kết” bảng đấu',
+                                'category' => 'Bóng đá Việt Nam',
+                                'desc' => 'Tờ báo UAE bày tỏ hy vọng rằng thầy trò HLV Park Hang-seo sẽ bị sảy chân trước khi đối đầu đội nhà ở trận “chung kết” để xác định tấm vé đi tiếp tại vòng loại World Cup.',
                             ),
                             array(
-                                'src' => 'https://znews-photo.zadn.vn/w210/Uploaded/qxjrcqjwq/2021_05_29/vi_sao_james_rodriguez_bi_loai_khoi_tuyen_colombia_1f7_5792868_1.jpg',
-                                'title' => 'James Rodriguez phản ứng khi bị loại khỏi tuyển Colombia',
-                                'category' => 'Esports',
-                                'desc' => 'Tiền vệ của Everton không hài lòng khi bị gạt khỏi danh sách tuyển Colombia ở vòng loại World Cup và Copa America 2021.',
+                                'src' => 'https://sohanews.sohacdn.com/zoom/470_290/160588918557773824/2021/6/5/photo1622859767047-1622859767436563804005.jpg',
+                                'title' => 'Bảng B EURO 2020: Tưởng dễ mà khó',
+                                'category' => 'EURO 2020',
+                                'desc' => 'Đội tuyển Bỉ nghiễm nhiên được coi là mạnh nhất bảng B EURO 2020 nhưng họ đang gặp không ít vấn đề và có thể sẽ đối mặt những thử thách nhất định đến từ Đan Mạch, Nga cũng như Phần Lan.',
                             ),
                         );
                         foreach ($data as $k => $v): ?>
@@ -181,6 +186,7 @@
                         <?php endforeach; ?>
                     </div>
                 </div>
+                <!--End Tin miễn phí-->
             </div>
             <div class="uk-width-1-3@m">
 
